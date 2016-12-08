@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+import Firebase
 
 class SignInVC: UIViewController {
 
@@ -21,5 +24,34 @@ class SignInVC: UIViewController {
     }
 
 
+    @IBAction func facebookButtonTapped(_ sender: Any) {
+        
+        let facebookLogin = FBSDKLoginManager()
+        
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self) {(result,error) in
+            if let err = error{
+                print("Error in facebook auth \(err)")
+            }else if (result?.isCancelled)!{
+                print("user cancelled the auth")
+            }else{
+                print("login successfull")
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.firebaseAuth(credential: credential)
+            }
+        }
+        
+    }
+    
+    func firebaseAuth(credential : FIRAuthCredential){
+        FIRAuth.auth()?.signIn(with: credential, completion: { (result, error) in
+            
+            if let err = error{
+                print("error in firebase auth \(err)")
+            }else{
+                print("succesfully signed in using firebase")
+            }
+            
+        })
+    }
 }
 

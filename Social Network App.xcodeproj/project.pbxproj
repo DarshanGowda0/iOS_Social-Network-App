@@ -12,11 +12,11 @@
 		7D78B03A1DF8624D006A1303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B0381DF8624D006A1303 /* Main.storyboard */; };
 		7D78B03C1DF8624D006A1303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B03B1DF8624D006A1303 /* Assets.xcassets */; };
 		7D78B03F1DF8624D006A1303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B03D1DF8624D006A1303 /* LaunchScreen.storyboard */; };
-		7D78B0471DF862CE006A1303 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B0461DF862CE006A1303 /* GoogleService-Info.plist */; };
 		7D78B04D1DF88988006A1303 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B04C1DF88988006A1303 /* Constants.swift */; };
 		7D78B04F1DF88A0C006A1303 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B04E1DF88A0C006A1303 /* FancyView.swift */; };
 		7D78B0511DF88B3C006A1303 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B0501DF88B3C006A1303 /* RoundButton.swift */; };
 		7D78B0531DF88DE9006A1303 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B0521DF88DE9006A1303 /* FancyButton.swift */; };
+		7D78B0561DF91F5F006A1303 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B0551DF91F5F006A1303 /* GoogleService-Info.plist */; };
 		E5EF94D3B59F7AD6F0308CC2 /* Pods_Social_Network_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7666E75A1EBCC0349EDB0B /* Pods_Social_Network_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +30,12 @@
 		7D78B03B1DF8624D006A1303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D78B03E1DF8624D006A1303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D78B0401DF8624D006A1303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D78B0461DF862CE006A1303 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D78B04C1DF88988006A1303 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7D78B04E1DF88A0C006A1303 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		7D78B0501DF88B3C006A1303 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		7D78B0521DF88DE9006A1303 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		7D78B0541DF8B29A006A1303 /* Social Network App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Network App.entitlements"; sourceTree = "<group>"; };
+		7D78B0551DF91F5F006A1303 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA1099B6346EC1B8E482F8F5 /* Pods-Social Network App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Network App/Pods-Social Network App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,11 +72,12 @@
 		7D78B0331DF8624D006A1303 /* Social Network App */ = {
 			isa = PBXGroup;
 			children = (
+				7D78B0541DF8B29A006A1303 /* Social Network App.entitlements */,
 				7D78B04B1DF8896F006A1303 /* Util */,
 				7D78B04A1DF86493006A1303 /* Model */,
 				7D78B0491DF8648E006A1303 /* View */,
 				7D78B0481DF86486006A1303 /* Controller */,
-				7D78B0461DF862CE006A1303 /* GoogleService-Info.plist */,
+				7D78B0551DF91F5F006A1303 /* GoogleService-Info.plist */,
 				7D78B0341DF8624D006A1303 /* AppDelegate.swift */,
 				7D78B0381DF8624D006A1303 /* Main.storyboard */,
 				7D78B03B1DF8624D006A1303 /* Assets.xcassets */,
@@ -88,6 +90,7 @@
 		7D78B0481DF86486006A1303 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7D78B0361DF8624D006A1303 /* SignInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -105,7 +108,6 @@
 		7D78B04A1DF86493006A1303 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7D78B0361DF8624D006A1303 /* SignInVC.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -170,7 +172,13 @@
 				TargetAttributes = {
 					7D78B0301DF8624D006A1303 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7DPDYX379M;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -200,7 +208,7 @@
 				7D78B03F1DF8624D006A1303 /* LaunchScreen.storyboard in Resources */,
 				7D78B03C1DF8624D006A1303 /* Assets.xcassets in Resources */,
 				7D78B03A1DF8624D006A1303 /* Main.storyboard in Resources */,
-				7D78B0471DF862CE006A1303 /* GoogleService-Info.plist in Resources */,
+				7D78B0561DF91F5F006A1303 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +396,8 @@
 			baseConfigurationReference = 6D01DDCBB3F51DB46CCB948B /* Pods-Social Network App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Social Network App/Social Network App.entitlements";
+				DEVELOPMENT_TEAM = 7DPDYX379M;
 				INFOPLIST_FILE = "Social Network App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darshan.Social-Network-App";
@@ -401,6 +411,8 @@
 			baseConfigurationReference = AA1099B6346EC1B8E482F8F5 /* Pods-Social Network App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Social Network App/Social Network App.entitlements";
+				DEVELOPMENT_TEAM = 7DPDYX379M;
 				INFOPLIST_FILE = "Social Network App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darshan.Social-Network-App";
