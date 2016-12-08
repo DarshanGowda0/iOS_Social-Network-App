@@ -10,4 +10,6 @@ import UIKit
 
 var GREY:CGFloat = 150.0/255.0
 
+var UID : String = "USER_ID"
+
 

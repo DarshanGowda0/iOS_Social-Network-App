@@ -17,6 +17,7 @@
 		7D78B0511DF88B3C006A1303 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B0501DF88B3C006A1303 /* RoundButton.swift */; };
 		7D78B0531DF88DE9006A1303 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B0521DF88DE9006A1303 /* FancyButton.swift */; };
 		7D78B0561DF91F5F006A1303 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B0551DF91F5F006A1303 /* GoogleService-Info.plist */; };
+		7D78B0581DF95CE9006A1303 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B0571DF95CE9006A1303 /* FeedVC.swift */; };
 		E5EF94D3B59F7AD6F0308CC2 /* Pods_Social_Network_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7666E75A1EBCC0349EDB0B /* Pods_Social_Network_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		7D78B0521DF88DE9006A1303 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		7D78B0541DF8B29A006A1303 /* Social Network App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Network App.entitlements"; sourceTree = "<group>"; };
 		7D78B0551DF91F5F006A1303 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D78B0571DF95CE9006A1303 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		AA1099B6346EC1B8E482F8F5 /* Pods-Social Network App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Network App/Pods-Social Network App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				7D78B0361DF8624D006A1303 /* SignInVC.swift */,
+				7D78B0571DF95CE9006A1303 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D78B0371DF8624D006A1303 /* SignInVC.swift in Sources */,
+				7D78B0581DF95CE9006A1303 /* FeedVC.swift in Sources */,
 				7D78B0511DF88B3C006A1303 /* RoundButton.swift in Sources */,
 				7D78B0351DF8624D006A1303 /* AppDelegate.swift in Sources */,
 				7D78B0531DF88DE9006A1303 /* FancyButton.swift in Sources */,
